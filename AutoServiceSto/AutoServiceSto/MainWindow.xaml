@@ -1,0 +1,473 @@
+﻿<Window x:Class="AutoServiceSto.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="AutoServiceSto - Система управління автосервісом" 
+        Height="800" Width="1200"
+        WindowStartupLocation="CenterScreen"
+        Background="#F5F5F5">
+
+    <Window.Resources>
+        <!-- Стиль для вкладок -->
+        <Style x:Key="ModernTabItemStyle" TargetType="TabItem">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="TabItem">
+                        <Grid>
+                            <Border Name="Border" Background="Transparent" BorderThickness="0" Margin="2,2,2,0">
+                                <ContentPresenter x:Name="ContentSite" VerticalAlignment="Center" HorizontalAlignment="Center"
+                                                  ContentSource="Header" Margin="12,8"/>
+                            </Border>
+                        </Grid>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsSelected" Value="True">
+                                <Setter TargetName="Border" Property="Background" Value="#7B1FA2"/>
+                                <Setter TargetName="Border" Property="BorderBrush" Value="#4A148C"/>
+                                <Setter Property="Foreground" Value="White"/>
+                            </Trigger>
+                            <Trigger Property="IsSelected" Value="False">
+                                <Setter Property="Foreground" Value="#666666"/>
+                            </Trigger>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter TargetName="Border" Property="Background" Value="#E1BEE7"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <!-- Стиль для кнопок с анимацией -->
+        <Style x:Key="ModernButtonStyle" TargetType="Button">
+            <Setter Property="Background" Value="#007ACC"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="FontWeight" Value="SemiBold"/>
+            <Setter Property="Padding" Value="15,8"/>
+            <Setter Property="Margin" Value="5"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="Cursor" Value="Hand"/>
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="BorderBrush" Value="#005A9E"/>
+            <Setter Property="RenderTransformOrigin" Value="0.5,0.5"/>
+            <Setter Property="RenderTransform">
+                <Setter.Value>
+                    <ScaleTransform ScaleX="1" ScaleY="1"/>
+                </Setter.Value>
+            </Setter>
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Background" Value="#005A9E"/>
+                </Trigger>
+                <Trigger Property="IsEnabled" Value="False">
+                    <Setter Property="Background" Value="#CCCCCC"/>
+                    <Setter Property="Foreground" Value="#888888"/>
+                </Trigger>
+                <EventTrigger RoutedEvent="Click">
+                    <BeginStoryboard>
+                        <Storyboard>
+                            <DoubleAnimation Storyboard.TargetProperty="RenderTransform.ScaleX"
+                                           To="0.95" Duration="0:0:0.1" AutoReverse="True"/>
+                            <DoubleAnimation Storyboard.TargetProperty="RenderTransform.ScaleY"
+                                           To="0.95" Duration="0:0:0.1" AutoReverse="True"/>
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger>
+            </Style.Triggers>
+        </Style>
+
+        <!-- Стиль для DataGrid -->
+        <Style x:Key="DataGridStyle" TargetType="DataGrid">
+            <Setter Property="Background" Value="White"/>
+            <Setter Property="BorderBrush" Value="#E0E0E0"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="RowBackground" Value="White"/>
+            <Setter Property="AlternatingRowBackground" Value="#F5F5F5"/>
+            <Setter Property="GridLinesVisibility" Value="Horizontal"/>
+            <Setter Property="HorizontalGridLinesBrush" Value="#EEEEEE"/>
+            <Setter Property="VerticalGridLinesBrush" Value="#EEEEEE"/>
+            <Setter Property="HeadersVisibility" Value="Column"/>
+            <Setter Property="CanUserAddRows" Value="False"/>
+            <Setter Property="CanUserDeleteRows" Value="False"/>
+            <Setter Property="AutoGenerateColumns" Value="False"/>
+        </Style>
+
+        <Style x:Key="DataGridColumnHeaderStyle" TargetType="DataGridColumnHeader">
+            <Setter Property="Background" Value="#7B1FA2"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="FontWeight" Value="SemiBold"/>
+            <Setter Property="Padding" Value="10,8"/>
+            <Setter Property="BorderThickness" Value="0,0,0,2"/>
+            <Setter Property="BorderBrush" Value="#4A148C"/>
+        </Style>
+
+        <Style x:Key="DataGridCellStyle" TargetType="DataGridCell">
+            <Setter Property="Padding" Value="10,8"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="FocusVisualStyle" Value="{x:Null}"/>
+        </Style>
+    </Window.Resources>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <!-- Header -->
+        <Border Grid.Row="0" Background="#7B1FA2" Padding="20,15" Height="80">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+
+                <!-- Иконка автомобиля -->
+                <TextBlock Grid.Column="0" Text="🚗" 
+                          FontSize="32" VerticalAlignment="Center"/>
+
+                <TextBlock Grid.Column="1" Text="AutoServiceSto" 
+                          Foreground="White" FontSize="28" FontWeight="Bold"
+                          VerticalAlignment="Center" Margin="15,0,0,0"
+                          FontFamily="Segoe UI"/>
+
+                <TextBlock Grid.Column="2" Text="Система управління автосервісом"
+                          Foreground="White" FontSize="14" FontStyle="Italic"
+                          VerticalAlignment="Center" Opacity="0.9"/>
+            </Grid>
+        </Border>
+
+        <!-- Welcome Banner -->
+        <Border Grid.Row="1" Background="Transparent" Height="100" Margin="10,5,10,5">
+            <Grid>
+                <Border Background="#7B1FA2" CornerRadius="10" Opacity="0.95">
+                    <Grid Margin="25,15">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="Auto"/>
+                        </Grid.ColumnDefinitions>
+
+                        <!-- Левая иконка -->
+                        <StackPanel Grid.Column="0" Orientation="Horizontal" VerticalAlignment="Center">
+                            <TextBlock Text="🔧" FontSize="36" VerticalAlignment="Center" Margin="0,0,15,0"/>
+                        </StackPanel>
+
+                        <!-- Центральный текст -->
+                        <StackPanel Grid.Column="1" VerticalAlignment="Center">
+                            <TextBlock Text="Ласкаво просимо до AutoServiceSto!" 
+                                      Foreground="White" FontSize="18" FontWeight="Bold"/>
+                            <TextBlock Text="Професійне обслуговування та ремонт автомобілів" 
+                                      Foreground="#E1BEE7" FontSize="12" Margin="0,5,0,0"/>
+                        </StackPanel>
+
+                        <!-- Правая информация -->
+                        <StackPanel Grid.Column="2" VerticalAlignment="Center">
+                            <TextBlock Text="🕒 Пн-Пт: 9:00 - 18:00" 
+                                      Foreground="White" FontSize="11"/>
+                            <TextBlock Text="🕒 Сб: 10:00 - 16:00" 
+                                      Foreground="White" FontSize="11" Margin="0,2,0,0"/>
+                            <TextBlock Text="📞 +380 (XX) XXX-XX-XX" 
+                                      Foreground="White" FontSize="11" Margin="0,2,0,0"/>
+                        </StackPanel>
+                    </Grid>
+                </Border>
+            </Grid>
+        </Border>
+
+        <!-- Main Content -->
+        <TabControl Grid.Row="1" Margin="10" BorderThickness="0">
+
+            <!-- Клієнти -->
+            <TabItem Header="КЛІЄНТИ" Style="{StaticResource ModernTabItemStyle}">
+                <Grid Margin="8">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+
+                    <StackPanel Orientation="Horizontal" Margin="0,0,0,15">
+                        <Button Content="ДОДАТИ КЛІЄНТА" Click="AddClient_Click" 
+                                Style="{StaticResource ModernButtonStyle}"
+                                Background="#4CAF50" Foreground="White"/>
+
+                        <Button Content="РЕДАГУВАТИ" Click="EditClient_Click" 
+                                Style="{StaticResource ModernButtonStyle}"
+                                Background="#2196F3" Foreground="White"/>
+
+                        <Button Content="ВИДАЛИТИ" Click="DeleteClient_Click" 
+                                Style="{StaticResource ModernButtonStyle}"
+                                Background="#F44336" Foreground="White"/>
+                    </StackPanel>
+
+                    <DataGrid x:Name="ClientsGrid" Grid.Row="1" 
+                             Style="{StaticResource DataGridStyle}"
+                             ColumnHeaderStyle="{StaticResource DataGridColumnHeaderStyle}"
+                             CellStyle="{StaticResource DataGridCellStyle}">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Header="ID" Binding="{Binding Id}" Width="60"/>
+                            <DataGridTextColumn Header="ПІБ" Binding="{Binding FullName}" Width="*"/>
+                            <DataGridTextColumn Header="Телефон" Binding="{Binding Phone}" Width="150"/>
+                            <DataGridTextColumn Header="Email" Binding="{Binding Email}" Width="200"/>
+                            <DataGridTextColumn Header="Адреса" Binding="{Binding Address}" Width="250"/>
+                        </DataGrid.Columns>
+                    </DataGrid>
+                </Grid>
+            </TabItem>
+
+            <!-- Автомобілі -->
+            <TabItem Header="АВТОМОБІЛІ" Style="{StaticResource ModernTabItemStyle}">
+                <Grid Margin="8">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+
+                    <StackPanel Orientation="Horizontal" Margin="0,0,0,15">
+                        <Button Content="ДОДАТИ АВТО" Click="AddCar_Click" 
+                                Style="{StaticResource ModernButtonStyle}"
+                                Background="#4CAF50" Foreground="White"/>
+
+                        <Button Content="РЕДАГУВАТИ" Click="EditCar_Click" 
+                                Style="{StaticResource ModernButtonStyle}"
+                                Background="#2196F3" Foreground="White"/>
+
+                        <Button Content="ВИДАЛИТИ" Click="DeleteCar_Click" 
+                                Style="{StaticResource ModernButtonStyle}"
+                                Background="#F44336" Foreground="White"/>
+                    </StackPanel>
+
+                    <DataGrid x:Name="CarsGrid" Grid.Row="1" 
+                             Style="{StaticResource DataGridStyle}"
+                             ColumnHeaderStyle="{StaticResource DataGridColumnHeaderStyle}"
+                             CellStyle="{StaticResource DataGridCellStyle}">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Header="ID" Binding="{Binding Id}" Width="60"/>
+                            <DataGridTextColumn Header="Клієнт ID" Binding="{Binding ClientId}" Width="80"/>
+                            <DataGridTextColumn Header="Марка" Binding="{Binding Brand}" Width="120"/>
+                            <DataGridTextColumn Header="Модель" Binding="{Binding Model}" Width="120"/>
+                            <DataGridTextColumn Header="Рік" Binding="{Binding Year}" Width="80"/>
+                            <DataGridTextColumn Header="Номер" Binding="{Binding LicensePlate}" Width="100"/>
+                            <DataGridTextColumn Header="VIN" Binding="{Binding VIN}" Width="150"/>
+                            <DataGridTextColumn Header="Пробіг" Binding="{Binding Mileage}" Width="100"/>
+                        </DataGrid.Columns>
+                    </DataGrid>
+                </Grid>
+            </TabItem>
+
+            <!-- Замовлення -->
+            <TabItem Header="ЗАМОВЛЕННЯ" Style="{StaticResource ModernTabItemStyle}">
+                <Grid Margin="8">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+
+                    <StackPanel Orientation="Horizontal" Margin="0,0,0,15">
+                        <Button Content="ДОДАТИ ЗАМОВЛЕННЯ" Click="AddOrder_Click" 
+                                Style="{StaticResource ModernButtonStyle}"
+                                Background="#4CAF50" Foreground="White"/>
+
+                        <Button Content="РЕДАГУВАТИ" Click="EditOrder_Click" 
+                                Style="{StaticResource ModernButtonStyle}"
+                                Background="#2196F3" Foreground="White"/>
+
+                        <Button Content="ВИДАЛИТИ" Click="DeleteOrder_Click" 
+                                Style="{StaticResource ModernButtonStyle}"
+                                Background="#F44336" Foreground="White"/>
+                    </StackPanel>
+
+                    <DataGrid x:Name="OrdersGrid" Grid.Row="1" 
+                             Style="{StaticResource DataGridStyle}"
+                             ColumnHeaderStyle="{StaticResource DataGridColumnHeaderStyle}"
+                             CellStyle="{StaticResource DataGridCellStyle}">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Header="ID" Binding="{Binding Id}" Width="60"/>
+                            <DataGridTextColumn Header="Клієнт" Binding="{Binding ClientId}" Width="80"/>
+                            <DataGridTextColumn Header="Авто" Binding="{Binding CarId}" Width="80"/>
+                            <DataGridTextColumn Header="Опис" Binding="{Binding Description}" Width="*"/>
+                            <DataGridTextColumn Header="Вартість" Binding="{Binding Cost, StringFormat={}{0:C2}}" Width="120" />
+                            <DataGridTextColumn Header="Дата" Binding="{Binding Date, StringFormat={}{0:dd.MM.yyyy HH:mm}}" Width="160"/>
+                        </DataGrid.Columns>
+                    </DataGrid>
+                </Grid>
+            </TabItem>
+
+            <!-- Склад -->
+            <TabItem Header="СКЛАД" Style="{StaticResource ModernTabItemStyle}">
+                <Grid Margin="8">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+
+                    <StackPanel Orientation="Horizontal" Margin="0,0,0,15">
+                        <Button Content="ДОДАТИ ЗАПЧАСТИНУ" Click="AddPart_Click" 
+                                Style="{StaticResource ModernButtonStyle}"
+                                Background="#4CAF50" Foreground="White"/>
+
+                        <Button Content="РЕДАГУВАТИ" Click="EditPart_Click" 
+                                Style="{StaticResource ModernButtonStyle}"
+                                Background="#2196F3" Foreground="White"/>
+
+                        <Button Content="ЗАКУПІВЛЯ" Click="PurchasePart_Click" 
+                                Style="{StaticResource ModernButtonStyle}"
+                                Background="#FF9800" Foreground="White"/>
+
+                        <Button Content="ВИДАЛИТИ" Click="DeletePart_Click" 
+                                Style="{StaticResource ModernButtonStyle}"
+                                Background="#F44336" Foreground="White"/>
+                    </StackPanel>
+
+                    <DataGrid x:Name="PartsGrid" Grid.Row="1" 
+                             Style="{StaticResource DataGridStyle}"
+                             ColumnHeaderStyle="{StaticResource DataGridColumnHeaderStyle}"
+                             CellStyle="{StaticResource DataGridCellStyle}">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Header="ID" Binding="{Binding Id}" Width="60"/>
+                            <DataGridTextColumn Header="Назва" Binding="{Binding Name}" Width="*"/>
+                            <DataGridTextColumn Header="Кількість" Binding="{Binding QuantityInStock}" Width="120"/>
+                            <DataGridTextColumn Header="Ціна" Binding="{Binding Price, StringFormat={}{0:C2}}" Width="120"/>
+                        </DataGrid.Columns>
+                    </DataGrid>
+                </Grid>
+            </TabItem>
+
+            <!-- Фінанси -->
+            <TabItem Header="ФІНАНСИ" Style="{StaticResource ModernTabItemStyle}">
+                <Grid Margin="8">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+
+                    <StackPanel Orientation="Horizontal" Margin="0,0,0,15">
+                        <Button Content="ДОХІД" Click="AddIncome_Click" 
+                                Style="{StaticResource ModernButtonStyle}"
+                                Background="#4CAF50" Foreground="White"/>
+
+                        <Button Content="ВИТРАТА" Click="AddExpense_Click" 
+                                Style="{StaticResource ModernButtonStyle}"
+                                Background="#F44336" Foreground="White"/>
+
+                        <Border Background="#7B1FA2" CornerRadius="8" Padding="15,8" Margin="20,0,0,0"
+                                VerticalAlignment="Center">
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock Text="БАЛАНС:" VerticalAlignment="Center" 
+                                          Foreground="White" FontWeight="Bold" Margin="0,0,10,0"/>
+                                <TextBlock x:Name="BalanceText" VerticalAlignment="Center" 
+                                          Foreground="White" FontWeight="Bold" FontSize="16"/>
+                            </StackPanel>
+                        </Border>
+                    </StackPanel>
+
+                    <DataGrid x:Name="FinanceGrid" Grid.Row="1" 
+                             Style="{StaticResource DataGridStyle}"
+                             ColumnHeaderStyle="{StaticResource DataGridColumnHeaderStyle}"
+                             CellStyle="{StaticResource DataGridCellStyle}">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Header="ID" Binding="{Binding Id}" Width="60"/>
+                            <DataGridTextColumn Header="Опис" Binding="{Binding Description}" Width="*"/>
+                            <DataGridTextColumn Header="Сума" Binding="{Binding Amount, StringFormat={}{0:C2}}" Width="120"/>
+                            <DataGridTextColumn Header="Дата" Binding="{Binding Date, StringFormat={}{0:dd.MM.yyyy HH:mm}}" Width="160"/>
+                        </DataGrid.Columns>
+                    </DataGrid>
+                </Grid>
+            </TabItem>
+
+            <!-- Обслуговування -->
+            <TabItem Header="ОБСЛУГОВУВАННЯ" Style="{StaticResource ModernTabItemStyle}">
+                <Grid Margin="8">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+
+                    <StackPanel Orientation="Horizontal" Margin="0,0,0,15">
+                        <Button Content="ВИКОНАТИ ОБСЛУГОВУВАННЯ" Click="PerformMaintenance_Click" 
+                                Style="{StaticResource ModernButtonStyle}"
+                                Background="#4CAF50" Foreground="White"/>
+
+                        <Button Content="ДЕТАЛІ ЗАПЧАСТИН" Click="ShowMaintenanceDetails_Click" 
+                                Style="{StaticResource ModernButtonStyle}"
+                                Background="#2196F3" Foreground="White"/>
+
+                        <Button Content="ОНОВИТИ" Click="RefreshMaintenance_Click" 
+                                Style="{StaticResource ModernButtonStyle}"
+                                Background="#9C27B0" Foreground="White"/>
+                    </StackPanel>
+
+                    <DataGrid x:Name="MaintenanceGrid" Grid.Row="1" 
+                             Style="{StaticResource DataGridStyle}"
+                             ColumnHeaderStyle="{StaticResource DataGridColumnHeaderStyle}"
+                             CellStyle="{StaticResource DataGridCellStyle}">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Header="ID" Binding="{Binding Id}" Width="60"/>
+                            <DataGridTextColumn Header="ID авто" Binding="{Binding CarId}" Width="80"/>
+                            <DataGridTextColumn Header="Опис" Binding="{Binding Description}" Width="*"/>
+                            <DataGridTextColumn Header="Роботи" Binding="{Binding LaborCost, StringFormat={}{0:C2}}" Width="100"/>
+                            <DataGridTextColumn Header="Запчастини" Binding="{Binding PartsCost, StringFormat={}{0:C2}}" Width="100"/>
+                            <DataGridTextColumn Header="Загалом" Binding="{Binding TotalCost, StringFormat={}{0:C2}}" Width="100"/>
+                            <DataGridTextColumn Header="Дата" Binding="{Binding Date, StringFormat={}{0:dd.MM.yyyy HH:mm}}" Width="140"/>
+                        </DataGrid.Columns>
+                    </DataGrid>
+                </Grid>
+            </TabItem>
+
+            <!-- Звіти -->
+            <TabItem Header="ЗВІТИ" Style="{StaticResource ModernTabItemStyle}">
+                <Grid Margin="15">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+
+                    <Button Content="ОНОВИТИ ЗВІТИ" Click="RefreshReports_Click" 
+                            Style="{StaticResource ModernButtonStyle}"
+                            Background="#9C27B0" Foreground="White"
+                            HorizontalAlignment="Left" Margin="0,0,0,15"/>
+
+                    <Border Grid.Row="1" Background="White" CornerRadius="8" 
+                            BorderBrush="#E0E0E0" BorderThickness="1" Padding="20">
+                        <ScrollViewer VerticalScrollBarVisibility="Auto">
+                            <TextBlock x:Name="ReportsBlock" TextWrapping="Wrap" FontSize="14" LineHeight="1.5"
+                                      Foreground="#333333" FontFamily="Segoe UI"/>
+                        </ScrollViewer>
+                    </Border>
+                </Grid>
+            </TabItem>
+        </TabControl>
+
+        <!-- Footer -->
+        <Border Grid.Row="2" Background="#7B1FA2" Padding="12" BorderBrush="#4A148C" BorderThickness="0,2,0,0">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <!-- Левая часть -->
+                <StackPanel Grid.Column="0" Orientation="Horizontal" VerticalAlignment="Center">
+                    <TextBlock Text="🚗" FontSize="16" VerticalAlignment="Center" Margin="0,0,8,0"/>
+                    <TextBlock Text="AutoServiceSto - Професійний автосервіс" 
+                              Foreground="White" FontSize="12" VerticalAlignment="Center"/>
+                </StackPanel>
+
+                <!-- Центральная часть -->
+                <StackPanel Grid.Column="1" Orientation="Vertical" VerticalAlignment="Center">
+                    <TextBlock Text="© 2025 Всі права захищено" 
+                              Foreground="White" FontSize="11" HorizontalAlignment="Center"/>
+                    <TextBlock Text="Система управління автосервісом" 
+                              Foreground="#E1BEE7" FontSize="10" HorizontalAlignment="Center" FontStyle="Italic"/>
+                </StackPanel>
+
+                <!-- Правая часть -->
+                <StackPanel Grid.Column="2" Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Right">
+                    <TextBlock Text="📞 Контакти: +380 (66) 503-60-73" 
+                              Foreground="White" FontSize="11" VerticalAlignment="Center"/>
+                </StackPanel>
+            </Grid>
+        </Border>
+    </Grid>
+</Window>

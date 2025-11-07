@@ -1,0 +1,595 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Students\\C#\\AIC\\Coursework\\AutoServiceSto\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{6B755C3B-A4A5-4DDF-17C0-79FF4B0083E6}|AutoServiceSto\\AutoServiceSto.csproj|c:\\students\\c#\\aic\\coursework\\autoservicesto\\autoservicesto\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{6B755C3B-A4A5-4DDF-17C0-79FF4B0083E6}|AutoServiceSto\\AutoServiceSto.csproj|solutionrelative:autoservicesto\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B755C3B-A4A5-4DDF-17C0-79FF4B0083E6}|AutoServiceSto\\AutoServiceSto.csproj|c:\\students\\c#\\aic\\coursework\\autoservicesto\\autoservicesto\\windows\\maintenancewindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{6B755C3B-A4A5-4DDF-17C0-79FF4B0083E6}|AutoServiceSto\\AutoServiceSto.csproj|solutionrelative:autoservicesto\\windows\\maintenancewindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B755C3B-A4A5-4DDF-17C0-79FF4B0083E6}|AutoServiceSto\\AutoServiceSto.csproj|c:\\students\\c#\\aic\\coursework\\autoservicesto\\autoservicesto\\windows\\simpleinputwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{6B755C3B-A4A5-4DDF-17C0-79FF4B0083E6}|AutoServiceSto\\AutoServiceSto.csproj|solutionrelative:autoservicesto\\windows\\simpleinputwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B755C3B-A4A5-4DDF-17C0-79FF4B0083E6}|AutoServiceSto\\AutoServiceSto.csproj|c:\\students\\c#\\aic\\coursework\\autoservicesto\\autoservicesto\\windows\\maintenancewindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6B755C3B-A4A5-4DDF-17C0-79FF4B0083E6}|AutoServiceSto\\AutoServiceSto.csproj|solutionrelative:autoservicesto\\windows\\maintenancewindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B755C3B-A4A5-4DDF-17C0-79FF4B0083E6}|AutoServiceSto\\AutoServiceSto.csproj|c:\\students\\c#\\aic\\coursework\\autoservicesto\\autoservicesto\\windows\\editpartwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{6B755C3B-A4A5-4DDF-17C0-79FF4B0083E6}|AutoServiceSto\\AutoServiceSto.csproj|solutionrelative:autoservicesto\\windows\\editpartwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B755C3B-A4A5-4DDF-17C0-79FF4B0083E6}|AutoServiceSto\\AutoServiceSto.csproj|c:\\students\\c#\\aic\\coursework\\autoservicesto\\autoservicesto\\windows\\editorderwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{6B755C3B-A4A5-4DDF-17C0-79FF4B0083E6}|AutoServiceSto\\AutoServiceSto.csproj|solutionrelative:autoservicesto\\windows\\editorderwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B755C3B-A4A5-4DDF-17C0-79FF4B0083E6}|AutoServiceSto\\AutoServiceSto.csproj|c:\\students\\c#\\aic\\coursework\\autoservicesto\\autoservicesto\\windows\\addcarwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{6B755C3B-A4A5-4DDF-17C0-79FF4B0083E6}|AutoServiceSto\\AutoServiceSto.csproj|solutionrelative:autoservicesto\\windows\\addcarwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B755C3B-A4A5-4DDF-17C0-79FF4B0083E6}|AutoServiceSto\\AutoServiceSto.csproj|c:\\students\\c#\\aic\\coursework\\autoservicesto\\autoservicesto\\windows\\editcarwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{6B755C3B-A4A5-4DDF-17C0-79FF4B0083E6}|AutoServiceSto\\AutoServiceSto.csproj|solutionrelative:autoservicesto\\windows\\editcarwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B755C3B-A4A5-4DDF-17C0-79FF4B0083E6}|AutoServiceSto\\AutoServiceSto.csproj|c:\\students\\c#\\aic\\coursework\\autoservicesto\\autoservicesto\\windows\\editclientwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{6B755C3B-A4A5-4DDF-17C0-79FF4B0083E6}|AutoServiceSto\\AutoServiceSto.csproj|solutionrelative:autoservicesto\\windows\\editclientwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B755C3B-A4A5-4DDF-17C0-79FF4B0083E6}|AutoServiceSto\\AutoServiceSto.csproj|c:\\students\\c#\\aic\\coursework\\autoservicesto\\autoservicesto\\autoservicesto.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{6B755C3B-A4A5-4DDF-17C0-79FF4B0083E6}|AutoServiceSto\\AutoServiceSto.csproj|solutionrelative:autoservicesto\\autoservicesto.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\aleks\\AppData\\Local\\Temp\\.vsdbgsrc\\5917cbb70f9b28a245decce13428c9b8b0242b7bced3975c23780bdc4e8c9caa\\XamlReader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B755C3B-A4A5-4DDF-17C0-79FF4B0083E6}|AutoServiceSto\\AutoServiceSto.csproj|c:\\students\\c#\\aic\\coursework\\autoservicesto\\autoservicesto\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6B755C3B-A4A5-4DDF-17C0-79FF4B0083E6}|AutoServiceSto\\AutoServiceSto.csproj|solutionrelative:autoservicesto\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B755C3B-A4A5-4DDF-17C0-79FF4B0083E6}|AutoServiceSto\\AutoServiceSto.csproj|c:\\students\\c#\\aic\\coursework\\autoservicesto\\autoservicesto\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{6B755C3B-A4A5-4DDF-17C0-79FF4B0083E6}|AutoServiceSto\\AutoServiceSto.csproj|solutionrelative:autoservicesto\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B755C3B-A4A5-4DDF-17C0-79FF4B0083E6}|AutoServiceSto\\AutoServiceSto.csproj|c:\\students\\c#\\aic\\coursework\\autoservicesto\\autoservicesto\\services\\soundplayerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6B755C3B-A4A5-4DDF-17C0-79FF4B0083E6}|AutoServiceSto\\AutoServiceSto.csproj|solutionrelative:autoservicesto\\services\\soundplayerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B755C3B-A4A5-4DDF-17C0-79FF4B0083E6}|AutoServiceSto\\AutoServiceSto.csproj|c:\\students\\c#\\aic\\coursework\\autoservicesto\\autoservicesto\\helpers\\buttonanimationhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6B755C3B-A4A5-4DDF-17C0-79FF4B0083E6}|AutoServiceSto\\AutoServiceSto.csproj|solutionrelative:autoservicesto\\helpers\\buttonanimationhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B755C3B-A4A5-4DDF-17C0-79FF4B0083E6}|AutoServiceSto\\AutoServiceSto.csproj|c:\\students\\c#\\aic\\coursework\\autoservicesto\\autoservicesto\\windows\\editcarwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6B755C3B-A4A5-4DDF-17C0-79FF4B0083E6}|AutoServiceSto\\AutoServiceSto.csproj|solutionrelative:autoservicesto\\windows\\editcarwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B755C3B-A4A5-4DDF-17C0-79FF4B0083E6}|AutoServiceSto\\AutoServiceSto.csproj|c:\\students\\c#\\aic\\coursework\\autoservicesto\\autoservicesto\\services\\carservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6B755C3B-A4A5-4DDF-17C0-79FF4B0083E6}|AutoServiceSto\\AutoServiceSto.csproj|solutionrelative:autoservicesto\\services\\carservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B755C3B-A4A5-4DDF-17C0-79FF4B0083E6}|AutoServiceSto\\AutoServiceSto.csproj|c:\\students\\c#\\aic\\coursework\\autoservicesto\\autoservicesto\\windows\\addcarwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6B755C3B-A4A5-4DDF-17C0-79FF4B0083E6}|AutoServiceSto\\AutoServiceSto.csproj|solutionrelative:autoservicesto\\windows\\addcarwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B755C3B-A4A5-4DDF-17C0-79FF4B0083E6}|AutoServiceSto\\AutoServiceSto.csproj|c:\\students\\c#\\aic\\coursework\\autoservicesto\\autoservicesto\\windows\\addcarwindow.xaml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{6B755C3B-A4A5-4DDF-17C0-79FF4B0083E6}|AutoServiceSto\\AutoServiceSto.csproj|solutionrelative:autoservicesto\\windows\\addcarwindow.xaml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B755C3B-A4A5-4DDF-17C0-79FF4B0083E6}|AutoServiceSto\\AutoServiceSto.csproj|c:\\students\\c#\\aic\\coursework\\autoservicesto\\autoservicesto\\windows\\simpleinputwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6B755C3B-A4A5-4DDF-17C0-79FF4B0083E6}|AutoServiceSto\\AutoServiceSto.csproj|solutionrelative:autoservicesto\\windows\\simpleinputwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B755C3B-A4A5-4DDF-17C0-79FF4B0083E6}|AutoServiceSto\\AutoServiceSto.csproj|c:\\students\\c#\\aic\\coursework\\autoservicesto\\autoservicesto\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6B755C3B-A4A5-4DDF-17C0-79FF4B0083E6}|AutoServiceSto\\AutoServiceSto.csproj|solutionrelative:autoservicesto\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B755C3B-A4A5-4DDF-17C0-79FF4B0083E6}|AutoServiceSto\\AutoServiceSto.csproj|c:\\students\\c#\\aic\\coursework\\autoservicesto\\autoservicesto\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6B755C3B-A4A5-4DDF-17C0-79FF4B0083E6}|AutoServiceSto\\AutoServiceSto.csproj|solutionrelative:autoservicesto\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B755C3B-A4A5-4DDF-17C0-79FF4B0083E6}|AutoServiceSto\\AutoServiceSto.csproj|c:\\students\\c#\\aic\\coursework\\autoservicesto\\autoservicesto\\services\\orderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6B755C3B-A4A5-4DDF-17C0-79FF4B0083E6}|AutoServiceSto\\AutoServiceSto.csproj|solutionrelative:autoservicesto\\services\\orderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B755C3B-A4A5-4DDF-17C0-79FF4B0083E6}|AutoServiceSto\\AutoServiceSto.csproj|c:\\students\\c#\\aic\\coursework\\autoservicesto\\autoservicesto\\infrastructure\\relaycommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6B755C3B-A4A5-4DDF-17C0-79FF4B0083E6}|AutoServiceSto\\AutoServiceSto.csproj|solutionrelative:autoservicesto\\infrastructure\\relaycommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B755C3B-A4A5-4DDF-17C0-79FF4B0083E6}|AutoServiceSto\\AutoServiceSto.csproj|c:\\students\\c#\\aic\\coursework\\autoservicesto\\autoservicesto\\services\\inventoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6B755C3B-A4A5-4DDF-17C0-79FF4B0083E6}|AutoServiceSto\\AutoServiceSto.csproj|solutionrelative:autoservicesto\\services\\inventoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B755C3B-A4A5-4DDF-17C0-79FF4B0083E6}|AutoServiceSto\\AutoServiceSto.csproj|c:\\students\\c#\\aic\\coursework\\autoservicesto\\autoservicesto\\services\\financeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6B755C3B-A4A5-4DDF-17C0-79FF4B0083E6}|AutoServiceSto\\AutoServiceSto.csproj|solutionrelative:autoservicesto\\services\\financeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B755C3B-A4A5-4DDF-17C0-79FF4B0083E6}|AutoServiceSto\\AutoServiceSto.csproj|c:\\students\\c#\\aic\\coursework\\autoservicesto\\autoservicesto\\models\\financerecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6B755C3B-A4A5-4DDF-17C0-79FF4B0083E6}|AutoServiceSto\\AutoServiceSto.csproj|solutionrelative:autoservicesto\\models\\financerecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B755C3B-A4A5-4DDF-17C0-79FF4B0083E6}|AutoServiceSto\\AutoServiceSto.csproj|c:\\students\\c#\\aic\\coursework\\autoservicesto\\autoservicesto\\data\\autoservicecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6B755C3B-A4A5-4DDF-17C0-79FF4B0083E6}|AutoServiceSto\\AutoServiceSto.csproj|solutionrelative:autoservicesto\\data\\autoservicecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B755C3B-A4A5-4DDF-17C0-79FF4B0083E6}|AutoServiceSto\\AutoServiceSto.csproj|c:\\students\\c#\\aic\\coursework\\autoservicesto\\autoservicesto\\models\\part.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6B755C3B-A4A5-4DDF-17C0-79FF4B0083E6}|AutoServiceSto\\AutoServiceSto.csproj|solutionrelative:autoservicesto\\models\\part.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B755C3B-A4A5-4DDF-17C0-79FF4B0083E6}|AutoServiceSto\\AutoServiceSto.csproj|c:\\students\\c#\\aic\\coursework\\autoservicesto\\autoservicesto\\models\\car.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6B755C3B-A4A5-4DDF-17C0-79FF4B0083E6}|AutoServiceSto\\AutoServiceSto.csproj|solutionrelative:autoservicesto\\models\\car.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B755C3B-A4A5-4DDF-17C0-79FF4B0083E6}|AutoServiceSto\\AutoServiceSto.csproj|c:\\students\\c#\\aic\\coursework\\autoservicesto\\autoservicesto\\models\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6B755C3B-A4A5-4DDF-17C0-79FF4B0083E6}|AutoServiceSto\\AutoServiceSto.csproj|solutionrelative:autoservicesto\\models\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B755C3B-A4A5-4DDF-17C0-79FF4B0083E6}|AutoServiceSto\\AutoServiceSto.csproj|c:\\students\\c#\\aic\\coursework\\autoservicesto\\autoservicesto\\windows\\simpleinputwindow.xaml||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{6B755C3B-A4A5-4DDF-17C0-79FF4B0083E6}|AutoServiceSto\\AutoServiceSto.csproj|solutionrelative:autoservicesto\\windows\\simpleinputwindow.xaml||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B755C3B-A4A5-4DDF-17C0-79FF4B0083E6}|AutoServiceSto\\AutoServiceSto.csproj|c:\\students\\c#\\aic\\coursework\\autoservicesto\\autoservicesto\\migrations\\20251007215233_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6B755C3B-A4A5-4DDF-17C0-79FF4B0083E6}|AutoServiceSto\\AutoServiceSto.csproj|solutionrelative:autoservicesto\\migrations\\20251007215233_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B755C3B-A4A5-4DDF-17C0-79FF4B0083E6}|AutoServiceSto\\AutoServiceSto.csproj|c:\\students\\c#\\aic\\coursework\\autoservicesto\\autoservicesto\\services\\clientservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6B755C3B-A4A5-4DDF-17C0-79FF4B0083E6}|AutoServiceSto\\AutoServiceSto.csproj|solutionrelative:autoservicesto\\services\\clientservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B755C3B-A4A5-4DDF-17C0-79FF4B0083E6}|AutoServiceSto\\AutoServiceSto.csproj|c:\\students\\c#\\aic\\coursework\\autoservicesto\\autoservicesto\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6B755C3B-A4A5-4DDF-17C0-79FF4B0083E6}|AutoServiceSto\\AutoServiceSto.csproj|solutionrelative:autoservicesto\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B755C3B-A4A5-4DDF-17C0-79FF4B0083E6}|AutoServiceSto\\AutoServiceSto.csproj|c:\\students\\c#\\aic\\coursework\\autoservicesto\\autoservicesto\\app.xaml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{6B755C3B-A4A5-4DDF-17C0-79FF4B0083E6}|AutoServiceSto\\AutoServiceSto.csproj|solutionrelative:autoservicesto\\app.xaml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "EditPartWindow.xaml",
+              "DocumentMoniker": "C:\\Students\\C#\\AIC\\Coursework\\AutoServiceSto\\AutoServiceSto\\Windows\\EditPartWindow.xaml",
+              "RelativeDocumentMoniker": "AutoServiceSto\\Windows\\EditPartWindow.xaml",
+              "ToolTip": "C:\\Students\\C#\\AIC\\Coursework\\AutoServiceSto\\AutoServiceSto\\Windows\\EditPartWindow.xaml",
+              "RelativeToolTip": "AutoServiceSto\\Windows\\EditPartWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-10-11T10:31:57.668Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MaintenanceWindow.xaml",
+              "DocumentMoniker": "C:\\Students\\C#\\AIC\\Coursework\\AutoServiceSto\\AutoServiceSto\\Windows\\MaintenanceWindow.xaml",
+              "RelativeDocumentMoniker": "AutoServiceSto\\Windows\\MaintenanceWindow.xaml",
+              "ToolTip": "C:\\Students\\C#\\AIC\\Coursework\\AutoServiceSto\\AutoServiceSto\\Windows\\MaintenanceWindow.xaml",
+              "RelativeToolTip": "AutoServiceSto\\Windows\\MaintenanceWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-10-11T10:32:06.436Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "EditCarWindow.xaml",
+              "DocumentMoniker": "C:\\Students\\C#\\AIC\\Coursework\\AutoServiceSto\\AutoServiceSto\\Windows\\EditCarWindow.xaml",
+              "RelativeDocumentMoniker": "AutoServiceSto\\Windows\\EditCarWindow.xaml",
+              "ToolTip": "C:\\Students\\C#\\AIC\\Coursework\\AutoServiceSto\\AutoServiceSto\\Windows\\EditCarWindow.xaml",
+              "RelativeToolTip": "AutoServiceSto\\Windows\\EditCarWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-10-09T21:03:57.52Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "SimpleInputWindow.xaml",
+              "DocumentMoniker": "C:\\Students\\C#\\AIC\\Coursework\\AutoServiceSto\\AutoServiceSto\\Windows\\SimpleInputWindow.xaml",
+              "RelativeDocumentMoniker": "AutoServiceSto\\Windows\\SimpleInputWindow.xaml",
+              "ToolTip": "C:\\Students\\C#\\AIC\\Coursework\\AutoServiceSto\\AutoServiceSto\\Windows\\SimpleInputWindow.xaml",
+              "RelativeToolTip": "AutoServiceSto\\Windows\\SimpleInputWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-10-09T17:06:25.813Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MaintenanceWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Students\\C#\\AIC\\Coursework\\AutoServiceSto\\AutoServiceSto\\Windows\\MaintenanceWindow.xaml.cs",
+              "RelativeDocumentMoniker": "AutoServiceSto\\Windows\\MaintenanceWindow.xaml.cs",
+              "ToolTip": "C:\\Students\\C#\\AIC\\Coursework\\AutoServiceSto\\AutoServiceSto\\Windows\\MaintenanceWindow.xaml.cs",
+              "RelativeToolTip": "AutoServiceSto\\Windows\\MaintenanceWindow.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-11T10:45:36.364Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "EditClientWindow.xaml",
+              "DocumentMoniker": "C:\\Students\\C#\\AIC\\Coursework\\AutoServiceSto\\AutoServiceSto\\Windows\\EditClientWindow.xaml",
+              "RelativeDocumentMoniker": "AutoServiceSto\\Windows\\EditClientWindow.xaml",
+              "ToolTip": "C:\\Students\\C#\\AIC\\Coursework\\AutoServiceSto\\AutoServiceSto\\Windows\\EditClientWindow.xaml",
+              "RelativeToolTip": "AutoServiceSto\\Windows\\EditClientWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-10-11T10:31:20.054Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Students\\C#\\AIC\\Coursework\\AutoServiceSto\\AutoServiceSto\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "AutoServiceSto\\MainWindow.xaml",
+              "ToolTip": "C:\\Students\\C#\\AIC\\Coursework\\AutoServiceSto\\AutoServiceSto\\MainWindow.xaml",
+              "RelativeToolTip": "AutoServiceSto\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-10-07T17:45:06.22Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "EditOrderWindow.xaml",
+              "DocumentMoniker": "C:\\Students\\C#\\AIC\\Coursework\\AutoServiceSto\\AutoServiceSto\\Windows\\EditOrderWindow.xaml",
+              "RelativeDocumentMoniker": "AutoServiceSto\\Windows\\EditOrderWindow.xaml",
+              "ToolTip": "C:\\Students\\C#\\AIC\\Coursework\\AutoServiceSto\\AutoServiceSto\\Windows\\EditOrderWindow.xaml",
+              "RelativeToolTip": "AutoServiceSto\\Windows\\EditOrderWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-10-11T10:31:36.926Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AddCarWindow.xaml",
+              "DocumentMoniker": "C:\\Students\\C#\\AIC\\Coursework\\AutoServiceSto\\AutoServiceSto\\Windows\\AddCarWindow.xaml",
+              "RelativeDocumentMoniker": "AutoServiceSto\\Windows\\AddCarWindow.xaml",
+              "ToolTip": "C:\\Students\\C#\\AIC\\Coursework\\AutoServiceSto\\AutoServiceSto\\Windows\\AddCarWindow.xaml",
+              "RelativeToolTip": "AutoServiceSto\\Windows\\AddCarWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-10-11T10:30:15.063Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "XamlReader.cs",
+              "DocumentMoniker": "C:\\Users\\aleks\\AppData\\Local\\Temp\\.vsdbgsrc\\5917cbb70f9b28a245decce13428c9b8b0242b7bced3975c23780bdc4e8c9caa\\XamlReader.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\Users\\aleks\\AppData\\Local\\Temp\\.vsdbgsrc\\5917cbb70f9b28a245decce13428c9b8b0242b7bced3975c23780bdc4e8c9caa\\XamlReader.cs",
+              "ToolTip": "C:\\Users\\aleks\\AppData\\Local\\Temp\\.vsdbgsrc\\5917cbb70f9b28a245decce13428c9b8b0242b7bced3975c23780bdc4e8c9caa\\XamlReader.cs [Read Only]",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\Users\\aleks\\AppData\\Local\\Temp\\.vsdbgsrc\\5917cbb70f9b28a245decce13428c9b8b0242b7bced3975c23780bdc4e8c9caa\\XamlReader.cs [Read Only]",
+              "ViewState": "AgIAAD8BAAAAAAAAAAAkwP4BAAACAAAAAQAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-11T10:12:49.6Z",
+              "EditorCaption": " [Read Only]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Students\\C#\\AIC\\Coursework\\AutoServiceSto\\AutoServiceSto\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "AutoServiceSto\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\Students\\C#\\AIC\\Coursework\\AutoServiceSto\\AutoServiceSto\\MainWindow.xaml.cs",
+              "RelativeToolTip": "AutoServiceSto\\MainWindow.xaml.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAAwB0AAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-07T17:45:05.554Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "App.xaml",
+              "DocumentMoniker": "C:\\Students\\C#\\AIC\\Coursework\\AutoServiceSto\\AutoServiceSto\\App.xaml",
+              "RelativeDocumentMoniker": "AutoServiceSto\\App.xaml",
+              "ToolTip": "C:\\Students\\C#\\AIC\\Coursework\\AutoServiceSto\\AutoServiceSto\\App.xaml",
+              "RelativeToolTip": "AutoServiceSto\\App.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-10-11T08:49:04.371Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "AutoServiceSto.csproj",
+              "DocumentMoniker": "C:\\Students\\C#\\AIC\\Coursework\\AutoServiceSto\\AutoServiceSto\\AutoServiceSto.csproj",
+              "RelativeDocumentMoniker": "AutoServiceSto\\AutoServiceSto.csproj",
+              "ToolTip": "C:\\Students\\C#\\AIC\\Coursework\\AutoServiceSto\\AutoServiceSto\\AutoServiceSto.csproj",
+              "RelativeToolTip": "AutoServiceSto\\AutoServiceSto.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-10-11T09:08:47.364Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "ButtonAnimationHelper.cs",
+              "DocumentMoniker": "C:\\Students\\C#\\AIC\\Coursework\\AutoServiceSto\\AutoServiceSto\\Helpers\\ButtonAnimationHelper.cs",
+              "RelativeDocumentMoniker": "AutoServiceSto\\Helpers\\ButtonAnimationHelper.cs",
+              "ToolTip": "C:\\Students\\C#\\AIC\\Coursework\\AutoServiceSto\\AutoServiceSto\\Helpers\\ButtonAnimationHelper.cs",
+              "RelativeToolTip": "AutoServiceSto\\Helpers\\ButtonAnimationHelper.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAgwDYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-11T08:51:15.387Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "SoundPlayerService.cs",
+              "DocumentMoniker": "C:\\Students\\C#\\AIC\\Coursework\\AutoServiceSto\\AutoServiceSto\\Services\\SoundPlayerService.cs",
+              "RelativeDocumentMoniker": "AutoServiceSto\\Services\\SoundPlayerService.cs",
+              "ToolTip": "C:\\Students\\C#\\AIC\\Coursework\\AutoServiceSto\\AutoServiceSto\\Services\\SoundPlayerService.cs",
+              "RelativeToolTip": "AutoServiceSto\\Services\\SoundPlayerService.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAgwDsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-11T08:50:21.433Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "EditCarWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Students\\C#\\AIC\\Coursework\\AutoServiceSto\\AutoServiceSto\\Windows\\EditCarWindow.xaml.cs",
+              "RelativeDocumentMoniker": "AutoServiceSto\\Windows\\EditCarWindow.xaml.cs",
+              "ToolTip": "C:\\Students\\C#\\AIC\\Coursework\\AutoServiceSto\\AutoServiceSto\\Windows\\EditCarWindow.xaml.cs",
+              "RelativeToolTip": "AutoServiceSto\\Windows\\EditCarWindow.xaml.cs",
+              "ViewState": "AgIAACoAAAAAAAAAAAAiwFkAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-09T21:04:09.263Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "CarService.cs",
+              "DocumentMoniker": "C:\\Students\\C#\\AIC\\Coursework\\AutoServiceSto\\AutoServiceSto\\Services\\CarService.cs",
+              "RelativeDocumentMoniker": "AutoServiceSto\\Services\\CarService.cs",
+              "ToolTip": "C:\\Students\\C#\\AIC\\Coursework\\AutoServiceSto\\AutoServiceSto\\Services\\CarService.cs",
+              "RelativeToolTip": "AutoServiceSto\\Services\\CarService.cs",
+              "ViewState": "AgIAADIAAAAAAAAAAAAAAFQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-07T17:56:00.212Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "AddCarWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Students\\C#\\AIC\\Coursework\\AutoServiceSto\\AutoServiceSto\\Windows\\AddCarWindow.xaml.cs",
+              "RelativeDocumentMoniker": "AutoServiceSto\\Windows\\AddCarWindow.xaml.cs",
+              "ToolTip": "C:\\Students\\C#\\AIC\\Coursework\\AutoServiceSto\\AutoServiceSto\\Windows\\AddCarWindow.xaml.cs",
+              "RelativeToolTip": "AutoServiceSto\\Windows\\AddCarWindow.xaml.cs",
+              "ViewState": "AgIAADEAAAAAAAAAAAAAAFMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-09T20:57:19.403Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "AddCarWindow.xaml",
+              "DocumentMoniker": "C:\\Students\\C#\\AIC\\Coursework\\AutoServiceSto\\AutoServiceSto\\Windows\\AddCarWindow.xaml",
+              "RelativeDocumentMoniker": "AutoServiceSto\\Windows\\AddCarWindow.xaml",
+              "ToolTip": "C:\\Students\\C#\\AIC\\Coursework\\AutoServiceSto\\AutoServiceSto\\Windows\\AddCarWindow.xaml",
+              "RelativeToolTip": "AutoServiceSto\\Windows\\AddCarWindow.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADAAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-10-09T21:01:51.511Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "SimpleInputWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Students\\C#\\AIC\\Coursework\\AutoServiceSto\\AutoServiceSto\\Windows\\SimpleInputWindow.xaml.cs",
+              "RelativeDocumentMoniker": "AutoServiceSto\\Windows\\SimpleInputWindow.xaml.cs",
+              "ToolTip": "C:\\Students\\C#\\AIC\\Coursework\\AutoServiceSto\\AutoServiceSto\\Windows\\SimpleInputWindow.xaml.cs",
+              "RelativeToolTip": "AutoServiceSto\\Windows\\SimpleInputWindow.xaml.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAA1wCwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-07T21:46:07.682Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Students\\C#\\AIC\\Coursework\\AutoServiceSto\\AutoServiceSto\\Data\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "AutoServiceSto\\Data\\AppDbContext.cs",
+              "ToolTip": "C:\\Students\\C#\\AIC\\Coursework\\AutoServiceSto\\AutoServiceSto\\Data\\AppDbContext.cs",
+              "RelativeToolTip": "AutoServiceSto\\Data\\AppDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-09T17:11:34.632Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Order.cs",
+              "DocumentMoniker": "C:\\Students\\C#\\AIC\\Coursework\\AutoServiceSto\\AutoServiceSto\\Models\\Order.cs",
+              "RelativeDocumentMoniker": "AutoServiceSto\\Models\\Order.cs",
+              "ToolTip": "C:\\Students\\C#\\AIC\\Coursework\\AutoServiceSto\\AutoServiceSto\\Models\\Order.cs",
+              "RelativeToolTip": "AutoServiceSto\\Models\\Order.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-07T18:00:32.96Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "OrderService.cs",
+              "DocumentMoniker": "C:\\Students\\C#\\AIC\\Coursework\\AutoServiceSto\\AutoServiceSto\\Services\\OrderService.cs",
+              "RelativeDocumentMoniker": "AutoServiceSto\\Services\\OrderService.cs",
+              "ToolTip": "C:\\Students\\C#\\AIC\\Coursework\\AutoServiceSto\\AutoServiceSto\\Services\\OrderService.cs",
+              "RelativeToolTip": "AutoServiceSto\\Services\\OrderService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-07T18:01:47.7Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "RelayCommand.cs",
+              "DocumentMoniker": "C:\\Students\\C#\\AIC\\Coursework\\AutoServiceSto\\AutoServiceSto\\Infrastructure\\RelayCommand.cs",
+              "RelativeDocumentMoniker": "AutoServiceSto\\Infrastructure\\RelayCommand.cs",
+              "ToolTip": "C:\\Students\\C#\\AIC\\Coursework\\AutoServiceSto\\AutoServiceSto\\Infrastructure\\RelayCommand.cs",
+              "RelativeToolTip": "AutoServiceSto\\Infrastructure\\RelayCommand.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-07T17:54:32.197Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "InventoryService.cs",
+              "DocumentMoniker": "C:\\Students\\C#\\AIC\\Coursework\\AutoServiceSto\\AutoServiceSto\\Services\\InventoryService.cs",
+              "RelativeDocumentMoniker": "AutoServiceSto\\Services\\InventoryService.cs",
+              "ToolTip": "C:\\Students\\C#\\AIC\\Coursework\\AutoServiceSto\\AutoServiceSto\\Services\\InventoryService.cs",
+              "RelativeToolTip": "AutoServiceSto\\Services\\InventoryService.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAgwCsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-07T18:02:11.321Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "FinanceService.cs",
+              "DocumentMoniker": "C:\\Students\\C#\\AIC\\Coursework\\AutoServiceSto\\AutoServiceSto\\Services\\FinanceService.cs",
+              "RelativeDocumentMoniker": "AutoServiceSto\\Services\\FinanceService.cs",
+              "ToolTip": "C:\\Students\\C#\\AIC\\Coursework\\AutoServiceSto\\AutoServiceSto\\Services\\FinanceService.cs",
+              "RelativeToolTip": "AutoServiceSto\\Services\\FinanceService.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAgwCUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-07T18:01:58.281Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "FinanceRecord.cs",
+              "DocumentMoniker": "C:\\Students\\C#\\AIC\\Coursework\\AutoServiceSto\\AutoServiceSto\\Models\\FinanceRecord.cs",
+              "RelativeDocumentMoniker": "AutoServiceSto\\Models\\FinanceRecord.cs",
+              "ToolTip": "C:\\Students\\C#\\AIC\\Coursework\\AutoServiceSto\\AutoServiceSto\\Models\\FinanceRecord.cs",
+              "RelativeToolTip": "AutoServiceSto\\Models\\FinanceRecord.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-07T18:00:56.764Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "AutoServiceContext.cs",
+              "DocumentMoniker": "C:\\Students\\C#\\AIC\\Coursework\\AutoServiceSto\\AutoServiceSto\\Data\\AutoServiceContext.cs",
+              "RelativeDocumentMoniker": "AutoServiceSto\\Data\\AutoServiceContext.cs",
+              "ToolTip": "C:\\Students\\C#\\AIC\\Coursework\\AutoServiceSto\\AutoServiceSto\\Data\\AutoServiceContext.cs",
+              "RelativeToolTip": "AutoServiceSto\\Data\\AutoServiceContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-09T17:07:44.191Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "Car.cs",
+              "DocumentMoniker": "C:\\Students\\C#\\AIC\\Coursework\\AutoServiceSto\\AutoServiceSto\\Models\\Car.cs",
+              "RelativeDocumentMoniker": "AutoServiceSto\\Models\\Car.cs",
+              "ToolTip": "C:\\Students\\C#\\AIC\\Coursework\\AutoServiceSto\\AutoServiceSto\\Models\\Car.cs",
+              "RelativeToolTip": "AutoServiceSto\\Models\\Car.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-07T18:00:18.373Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "Client.cs",
+              "DocumentMoniker": "C:\\Students\\C#\\AIC\\Coursework\\AutoServiceSto\\AutoServiceSto\\Models\\Client.cs",
+              "RelativeDocumentMoniker": "AutoServiceSto\\Models\\Client.cs",
+              "ToolTip": "C:\\Students\\C#\\AIC\\Coursework\\AutoServiceSto\\AutoServiceSto\\Models\\Client.cs",
+              "RelativeToolTip": "AutoServiceSto\\Models\\Client.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-07T18:00:06.242Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "Part.cs",
+              "DocumentMoniker": "C:\\Students\\C#\\AIC\\Coursework\\AutoServiceSto\\AutoServiceSto\\Models\\Part.cs",
+              "RelativeDocumentMoniker": "AutoServiceSto\\Models\\Part.cs",
+              "ToolTip": "C:\\Students\\C#\\AIC\\Coursework\\AutoServiceSto\\AutoServiceSto\\Models\\Part.cs",
+              "RelativeToolTip": "AutoServiceSto\\Models\\Part.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-07T18:00:44.066Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "20251007215233_InitialCreate.cs",
+              "DocumentMoniker": "C:\\Students\\C#\\AIC\\Coursework\\AutoServiceSto\\AutoServiceSto\\Migrations\\20251007215233_InitialCreate.cs",
+              "RelativeDocumentMoniker": "AutoServiceSto\\Migrations\\20251007215233_InitialCreate.cs",
+              "ToolTip": "C:\\Students\\C#\\AIC\\Coursework\\AutoServiceSto\\AutoServiceSto\\Migrations\\20251007215233_InitialCreate.cs",
+              "RelativeToolTip": "AutoServiceSto\\Migrations\\20251007215233_InitialCreate.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-07T21:52:33.603Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "SimpleInputWindow.xaml",
+              "DocumentMoniker": "C:\\Students\\C#\\AIC\\Coursework\\AutoServiceSto\\AutoServiceSto\\Windows\\SimpleInputWindow.xaml",
+              "RelativeDocumentMoniker": "AutoServiceSto\\Windows\\SimpleInputWindow.xaml",
+              "ToolTip": "C:\\Students\\C#\\AIC\\Coursework\\AutoServiceSto\\AutoServiceSto\\Windows\\SimpleInputWindow.xaml",
+              "RelativeToolTip": "AutoServiceSto\\Windows\\SimpleInputWindow.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-10-07T21:45:43.984Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "ClientService.cs",
+              "DocumentMoniker": "C:\\Students\\C#\\AIC\\Coursework\\AutoServiceSto\\AutoServiceSto\\Services\\ClientService.cs",
+              "RelativeDocumentMoniker": "AutoServiceSto\\Services\\ClientService.cs",
+              "ToolTip": "C:\\Students\\C#\\AIC\\Coursework\\AutoServiceSto\\AutoServiceSto\\Services\\ClientService.cs",
+              "RelativeToolTip": "AutoServiceSto\\Services\\ClientService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-07T17:54:52.484Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "App.xaml.cs",
+              "DocumentMoniker": "C:\\Students\\C#\\AIC\\Coursework\\AutoServiceSto\\AutoServiceSto\\App.xaml.cs",
+              "RelativeDocumentMoniker": "AutoServiceSto\\App.xaml.cs",
+              "ToolTip": "C:\\Students\\C#\\AIC\\Coursework\\AutoServiceSto\\AutoServiceSto\\App.xaml.cs",
+              "RelativeToolTip": "AutoServiceSto\\App.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-07T21:42:24.179Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "App.xaml",
+              "DocumentMoniker": "C:\\Students\\C#\\AIC\\Coursework\\AutoServiceSto\\AutoServiceSto\\App.xaml",
+              "RelativeDocumentMoniker": "AutoServiceSto\\App.xaml",
+              "ToolTip": "C:\\Students\\C#\\AIC\\Coursework\\AutoServiceSto\\AutoServiceSto\\App.xaml",
+              "RelativeToolTip": "AutoServiceSto\\App.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-10-07T21:42:30.124Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

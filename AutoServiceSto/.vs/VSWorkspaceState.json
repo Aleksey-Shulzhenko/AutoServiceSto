@@ -1,0 +1,14 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\AutoServiceSto",
+    "\\AutoServiceSto\\Data",
+    "\\AutoServiceSto\\Infrastructure",
+    "\\AutoServiceSto\\Migrations",
+    "\\AutoServiceSto\\Models",
+    "\\AutoServiceSto\\obj",
+    "\\AutoServiceSto\\Services"
+  ],
+  "SelectedNode": "\\AutoServiceSto\\MainWindow.xaml.cs",
+  "PreviewInSolutionExplorer": false
+}

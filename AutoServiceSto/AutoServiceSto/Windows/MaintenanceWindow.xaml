@@ -1,0 +1,132 @@
+﻿<Window x:Class="AutoServiceSto.Windows.MaintenanceWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="🔧 Виконання обслуговування" Height="574" Width="750"
+        WindowStartupLocation="CenterOwner"
+        Background="#F5F5F5">
+
+    <Window.Resources>
+        <Style TargetType="TextBlock">
+            <Setter Property="Foreground" Value="#333333"/>
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+            <Setter Property="Margin" Value="0,0,10,5"/>
+        </Style>
+
+        <Style TargetType="TextBox">
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="Padding" Value="8"/>
+            <Setter Property="Background" Value="White"/>
+            <Setter Property="BorderBrush" Value="#E0E0E0"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="Margin" Value="0,0,0,5"/>
+        </Style>
+
+        <Style TargetType="ComboBox">
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="Padding" Value="8"/>
+            <Setter Property="Background" Value="White"/>
+            <Setter Property="BorderBrush" Value="#E0E0E0"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="Margin" Value="0,0,0,5"/>
+        </Style>
+
+        <Style TargetType="Button">
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="Padding" Value="8,6"/>
+            <Setter Property="Background" Value="#7B1FA2"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="Cursor" Value="Hand"/>
+            <Setter Property="FontWeight" Value="SemiBold"/>
+        </Style>
+
+        <Style x:Key="DataGridStyle" TargetType="DataGrid">
+            <Setter Property="Background" Value="White"/>
+            <Setter Property="BorderBrush" Value="#E0E0E0"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="RowBackground" Value="White"/>
+            <Setter Property="AlternatingRowBackground" Value="#F5F5F5"/>
+        </Style>
+    </Window.Resources>
+
+    <Grid Margin="15">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="150"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <!-- Заголовок -->
+        <TextBlock Text="🔧 Обслуговування автомобіля" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2"
+                   FontSize="18" FontWeight="Bold" Foreground="#7B1FA2" 
+                   Margin="0,0,0,15" HorizontalAlignment="Center"/>
+
+        <!-- Выбор автомобиля -->
+        <TextBlock Text="🚗 Автомобіль:" Grid.Row="1" Grid.Column="0"/>
+        <ComboBox x:Name="CarComboBox" Grid.Row="1" Grid.Column="1" 
+                  DisplayMemberPath="DisplayName" SelectedValuePath="Id"/>
+
+        <!-- Описание обслуживания -->
+        <TextBlock Text="📝 Опис робіт:" Grid.Row="2" Grid.Column="0" VerticalAlignment="Top"/>
+        <TextBox x:Name="DescriptionTextBox" Grid.Row="2" Grid.Column="1" Height="80" 
+                 TextWrapping="Wrap" VerticalScrollBarVisibility="Auto"/>
+
+        <!-- Стоимость работ -->
+        <TextBlock Text="💰 Вартість робіт:" Grid.Row="3" Grid.Column="0"/>
+        <TextBox x:Name="LaborCostTextBox" Grid.Row="3" Grid.Column="1" 
+                 Text="0" TextChanged="LaborCostTextBox_TextChanged"/>
+
+        <!-- Список запчастей -->
+        <TextBlock Text="🔩 Використані запчастини:" Grid.Row="4" Grid.Column="0" VerticalAlignment="Top"/>
+        <StackPanel Grid.Row="4" Grid.Column="1" Margin="0,0,0,10">
+            <DataGrid x:Name="PartsGrid" AutoGenerateColumns="False" Height="150" Style="{StaticResource DataGridStyle}">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Назва" Binding="{Binding PartName}" Width="*"/>
+                    <DataGridTextColumn Header="Кількість" Binding="{Binding Quantity}" Width="80"/>
+                    <DataGridTextColumn Header="Ціна" Binding="{Binding UnitPrice}" Width="80"/>
+                    <DataGridTextColumn Header="Загалом" Binding="{Binding TotalCost}" Width="80" IsReadOnly="True"/>
+                    <DataGridTemplateColumn Width="100">
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <Button Content="🗑️" Click="RemovePart_Click" Padding="5,2" 
+                                        Background="#F44336" FontSize="12"/>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+                </DataGrid.Columns>
+            </DataGrid>
+            <StackPanel Orientation="Horizontal" Margin="0,10,0,0">
+                <ComboBox x:Name="AvailablePartsComboBox" DisplayMemberPath="Name" Width="200" Margin="0,0,10,0"/>
+                <TextBox x:Name="QuantityTextBox" Text="1" Width="60" Margin="0,0,10,0"/>
+                <Button Content="➕ Додати" Click="AddPart_Click" Width="100"
+                        Background="#4CAF50"/>
+            </StackPanel>
+        </StackPanel>
+
+        <!-- Итоговая стоимость -->
+        <TextBlock Text="🔩 Вартість запчастин:" Grid.Row="5" Grid.Column="0"/>
+        <TextBlock x:Name="PartsCostText" Grid.Row="5" Grid.Column="1" FontWeight="Bold" Text="0.00 ₴"/>
+
+        <TextBlock Text="💵 Загальна вартість:" Grid.Row="6" Grid.Column="0"/>
+        <TextBlock x:Name="TotalCostText" Grid.Row="6" Grid.Column="1" FontWeight="Bold" FontSize="16" Text="0.00 ₴"/>
+
+        <!-- Кнопки -->
+        <StackPanel Grid.Row="7" Grid.Column="0" Grid.ColumnSpan="2" 
+                    Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,20,0,0">
+            <Button Content="✅ Виконати" Click="Perform_Click" Width="120" Margin="0,0,10,0"
+                    Background="#4CAF50" FontSize="14" Padding="12,8"/>
+            <Button Content="❌ Скасувати" Click="Cancel_Click" Width="120"
+                    Background="#F44336" FontSize="14" Padding="12,8"/>
+        </StackPanel>
+    </Grid>
+</Window>

@@ -1,0 +1,88 @@
+﻿<Window x:Class="AutoServiceSto.Windows.AddCarWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="🚗 Додати автомобіль" Height="600" Width="500"
+        WindowStartupLocation="CenterOwner"
+        Background="#F5F5F5">
+
+	<Window.Resources>
+		<Style TargetType="TextBlock">
+			<Setter Property="Foreground" Value="#333333"/>
+			<Setter Property="FontSize" Value="14"/>
+			<Setter Property="VerticalAlignment" Value="Center"/>
+			<Setter Property="Margin" Value="0,0,10,10"/>
+		</Style>
+
+		<Style TargetType="TextBox">
+			<Setter Property="FontSize" Value="14"/>
+			<Setter Property="Padding" Value="8"/>
+			<Setter Property="Background" Value="White"/>
+			<Setter Property="BorderBrush" Value="#E0E0E0"/>
+			<Setter Property="BorderThickness" Value="1"/>
+			<Setter Property="Margin" Value="0,0,0,10"/>
+		</Style>
+
+		<Style TargetType="Button">
+			<Setter Property="FontSize" Value="14"/>
+			<Setter Property="Padding" Value="12,8"/>
+			<Setter Property="Background" Value="#7B1FA2"/>
+			<Setter Property="Foreground" Value="White"/>
+			<Setter Property="BorderThickness" Value="0"/>
+			<Setter Property="Cursor" Value="Hand"/>
+			<Setter Property="FontWeight" Value="SemiBold"/>
+		</Style>
+	</Window.Resources>
+
+	<Grid Margin="20">
+		<Grid.RowDefinitions>
+			<RowDefinition Height="Auto"/>
+			<RowDefinition Height="Auto"/>
+			<RowDefinition Height="Auto"/>
+			<RowDefinition Height="Auto"/>
+			<RowDefinition Height="Auto"/>
+			<RowDefinition Height="Auto"/>
+			<RowDefinition Height="Auto"/>
+			<RowDefinition Height="*"/>
+			<RowDefinition Height="Auto"/>
+		</Grid.RowDefinitions>
+
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition Width="120"/>
+			<ColumnDefinition Width="*"/>
+		</Grid.ColumnDefinitions>
+
+		<!-- Заголовок -->
+		<TextBlock Text="🚗 Новий автомобіль" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2"
+                   FontSize="18" FontWeight="Bold" Foreground="#7B1FA2"
+                   Margin="0,0,0,20" HorizontalAlignment="Center"/>
+
+		<TextBlock Text="Марка:" Grid.Row="1" Grid.Column="0"/>
+		<TextBox x:Name="BrandTextBox" Grid.Row="1" Grid.Column="1"/>
+
+		<TextBlock Text="Модель:" Grid.Row="2" Grid.Column="0"/>
+		<TextBox x:Name="ModelTextBox" Grid.Row="2" Grid.Column="1"/>
+
+		<TextBlock Text="Рік:" Grid.Row="3" Grid.Column="0"/>
+		<TextBox x:Name="YearTextBox" Grid.Row="3" Grid.Column="1" Text="2024"/>
+
+		<TextBlock Text="Номер:" Grid.Row="4" Grid.Column="0"/>
+		<TextBox x:Name="LicensePlateTextBox" Grid.Row="4" Grid.Column="1"/>
+
+		<TextBlock Text="VIN код:" Grid.Row="5" Grid.Column="0"/>
+		<TextBox x:Name="VINTextBox" Grid.Row="5" Grid.Column="1"/>
+
+		<TextBlock Text="Пробіг (км):" Grid.Row="6" Grid.Column="0"/>
+		<TextBox x:Name="MileageTextBox" Grid.Row="6" Grid.Column="1" Text="0"/>
+
+		<TextBlock Text="ID клієнта:" Grid.Row="7" Grid.Column="0"/>
+		<TextBox x:Name="ClientIdTextBox" Grid.Row="7" Grid.Column="1"/>
+
+		<StackPanel Grid.Row="8" Grid.Column="0" Grid.ColumnSpan="2"
+                    Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,20,0,0">
+			<Button Content="✅ Додати" Click="Add_Click" Width="100" Margin="0,0,10,0"
+                    Background="#4CAF50"/>
+			<Button Content="❌ Скасувати" Click="Cancel_Click" Width="100"
+                    Background="#F44336"/>
+		</StackPanel>
+	</Grid>
+</Window>
